@@ -1,0 +1,173 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: width 0.5s;
+}
+
+.navbar.open {
+  width: 200px;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.nav-links.open {
+  display: block;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  color: #f8f0f0;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  width: 30px;
+  background-color: #d80e41;
+}
+
+.main-content {
+  margin-left: 40px;
+  padding: 20px;
+  transition: margin-left 0.5s;
+}
+
+.main-content.open {
+  margin-left: 200px;
+}
+.Decrypt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.Decrypt h1 {
+  margin-bottom: 20px;
+}
+
+.Decrypt form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Decrypt label {
+  margin-bottom: 10px;
+}
+
+.Decrypt input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Decrypt button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Decrypt p {
+  margin-top: 20px;
+}
+.Encrypt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.Encrypt h1 {
+  margin-bottom: 20px;
+}
+
+.Encrypt form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Encrypt label {
+  margin-bottom: 10px;
+}
+
+.Encrypt input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Encrypt button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Encrypt p {
+  margin-top: 20px;
+}
+
