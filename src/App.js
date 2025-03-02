@@ -4,6 +4,7 @@ import Decrypt from './Decrypt';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 import './App.css';
+import FileRead from './FileRead';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,6 +33,10 @@ function App() {
               <Link to="/encrypt" className="nav-link" onMouseOver={(e) => e.target.style.backgroundColor = '#ccc'} 
                    onMouseOut={(e) => e.target.style.backgroundColor = ''}>Encrypt</Link>
             </li>
+            <li>
+              <Link to="/fileread" className="nav-link" onMouseOver={(e) => e.target.style.backgroundColor = '#ccc'} 
+                   onMouseOut={(e) => e.target.style.backgroundColor = ''}>FileRead</Link>
+            </li>
           </ul>
         </nav>
         <div className={`main-content ${menuOpen ? 'open' : ''}`}>
@@ -39,6 +44,7 @@ function App() {
           <Routes>
             <Route path="/decrypt" element={<Decrypt />} />
             <Route path="/encrypt" element={<Encrypt />} />
+            <Route path="/fileread" element={<FileRead/>} />
           </Routes>
         </div>
       </div>
